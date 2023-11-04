@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-4xl font-semibold text-primary md:text-6xl;
+}
+
+h2 {
+  @apply text-2xl font-semibold text-primary md:text-3xl;
+}
+
+h3 {
+  @apply text-xl font-semibold text-primary md:text-2xl;
+}
+
+p {
+  @apply text-gray text-base md:text-lg;
+}
+
+.hidden {
+  display: hidden;
+}
+
+.list-wrap {
+  @apply flex flex-col font-bold border relative justify-center items-center border-black border-opacity-100 p-4;
+  width: 40%;
+  left: 30%;
+  height: 100%;
+}
+
+.past-exam-list {
+  @apply text-center flex flex-col bg-secondary justify-center rounded-lg;
+  width: 50%;
+  height: 50%;
+}
+
+.past-exam-item {
+  @apply hover:underline font-normal relative bg-white rounded-lg m-1;
+  padding: 0 1px;
+  width: 50%;
+  left: 25%;
+  color: #0000EE;
+}
+
+.bookstairs {
+  display: none;
+  left: 70%;
+  height: 20%;
+}
+
+.notebook {
+  display: none;
+}
+
+.studying {
+  display: none;
+}
+
