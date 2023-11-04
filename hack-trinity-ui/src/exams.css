@@ -1,2 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-
+.past-exam-list {
+    @apply text-center;   
+}
+  
+.past-exam-item {
+@apply hover:underline font-medium;
+}
