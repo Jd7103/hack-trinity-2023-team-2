@@ -14,6 +14,7 @@ function Exams({ code, name, exams }) {
         ))}
       </ul>
     </div>
+
   )
 }
 
