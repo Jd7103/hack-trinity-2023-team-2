@@ -50,10 +50,27 @@ p {
 }
 
 .notebook {
-  display: none;
+  height: 50px;
+  top: 10px;
 }
 
 .studying {
   display: none;
 }
+
+.design-bar {
+  display: none;
+  top: 500px;
+  height: 35px;
+  clip-path: polygon(45% 0, 100% 0, 100% 100%, 0% 100%);
+  width: 500px;
+}
+
+.heading {
+  position: relative;
+  left: 5%;
+}
+
+
+
 

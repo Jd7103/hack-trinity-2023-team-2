@@ -1,8 +1,10 @@
+import notebook from "../media/notebook.svg";
 
 function Navbar() {
   return (
     <nav className="bg-secondary">
-      <h2 className="text-white p-4">Trinity Exam Search</h2>
+      <img className="notebook absolute" src={notebook}></img>
+      <h2 className="text-white p-4 heading">Trinity Exam Search</h2>
     </nav>
   )
 }
