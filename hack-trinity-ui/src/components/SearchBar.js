@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+
 const modules = [
   { code: "CSU11001", name: "MATHEMATICS I" },
   { code: "CSU11021", name: "Introduction to Computing I" },
