@@ -3,7 +3,6 @@ import React, { useRef } from 'react';
 function Exams(props) {
   const pastExamList = useRef();
 
-  // const pastExamList2 = document.getElementById('list');
   const exams = [
   {
     module: "CSU11001",
@@ -29,7 +28,6 @@ function Exams(props) {
 
   const toggleButton = () => {
       pastExamList.current.classList.toggle('hidden');
-      // pastExamList2.classList.toggle('hidden');
   }
 
   return (
@@ -43,8 +41,8 @@ function Exams(props) {
           ))}
         </ul>
       </div>
+      <img src="bookstairs" className="opacity-30 relative"></img>
     </div>
-
   )
 }
 

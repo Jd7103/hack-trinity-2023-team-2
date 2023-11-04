@@ -30,7 +30,7 @@ p {
 }
 
 .past-exam-list {
-  @apply text-center flex flex-col bg-primary justify-center rounded-lg;
+  @apply text-center flex flex-col bg-secondary justify-center rounded-lg;
   width: 50%;
   height: 50%;
 }
@@ -42,4 +42,3 @@ p {
   left: 25%;
   color: #0000EE;
 }
-
