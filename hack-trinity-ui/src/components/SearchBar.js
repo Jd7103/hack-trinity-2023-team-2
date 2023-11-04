@@ -7,14 +7,14 @@ const modules = [
   { code: "CSU22011", name: "Algorithms and Data Structures I" },
 ];
 
-const years = ["All Years", "2019", "2020", "2021"];
+// const years = ["All Years", "2019", "2020", "2021"];
 
 function SearchBar({ handleSearch }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedModuleOption, setSelectedModuleOption] = useState(null);
   const [showDropdown, setShowDropdown] = useState(false);
   const moduleInputRef = useRef(null);
-  const yearInputRef = useRef(null);
+  // const yearInputRef = useRef(null);
 
   const handleSelectModule = (module) => {
     setSelectedModuleOption(module);
@@ -28,10 +28,10 @@ function SearchBar({ handleSearch }) {
 
   return (
     <div className="flex justify-center items-center p-6">
-      <div className="w-[50vw]">
+      <div className="w-[40vw]">
         <h3 className="text-center p-2">Search for an exam:</h3>
         <div className="flex flex-row justify-between">
-          <div className="w-[60%]">
+          <div className="w-[70%]">
             <input
               ref={moduleInputRef}
               type="text"
@@ -52,7 +52,7 @@ function SearchBar({ handleSearch }) {
                     <button
                       key={module.code}
                       onClick={() => handleSelectModule(module)}
-                      className="p-2 border border-black"
+                      className="p-2 border border-black hover:text-primary hover:underline"
                     >
                       {module.code}-{module.name}
                     </button>
@@ -60,7 +60,7 @@ function SearchBar({ handleSearch }) {
               </div>
             ) : null}
           </div>
-          <div className="mx-2">
+          {/* <div className="mx-2">
             <select className="p-2" ref={yearInputRef}>
               {years.map((year, index) => (
                 <option key={index} value={year}>
@@ -68,9 +68,9 @@ function SearchBar({ handleSearch }) {
                 </option>
               ))}
             </select>
-          </div>
-          <div className="flex-1">
-            <button className="p-2 border border-black rounded-md" onClick={() => handleSearch(selectedModuleOption.code, selectedModuleOption.name, yearInputRef.current.value)}>
+          </div> */}
+          <div className="mx-2 w-[30%]">
+            <button className="p-2 border border-black rounded-md hover:bg-primary hover:text-white" onClick={() => handleSearch(selectedModuleOption.code, selectedModuleOption.name)}>
               Search
             </button>
           </div>
