@@ -73,9 +73,31 @@ p {
 
 .about-section {
   margin-top: 50px;
+  margin-bottom: 200px;
   height: 500px;
+  border-radius: 50px;
 }
 
+.about-text {
+  top: 5%;
+  height: 90%;
+  width: 800px;
+  border-radius: 50px;
+}
 
+.knowledge {
+  height: 400px;
+  align-self: center;
+  left: 5%;
+}
 
+.white-bar {
+  width: 3px; 
+  height: 90%;
+  top: 5%;
+}
 
+.about-text .title-bar {
+  width: 30px;
+  transform: rotate(90);
+}
