@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 const modules = [
-  { code: "CSU11001", name: "Introduction to Programming" },
-  { code: "CSU11002", name: "Introduction to Computer Systems" },
-  { code: "CSU11003", name: "Introduction to Software Engineering" },
-  { code: "CSU11004", name: "Introduction to Web Development" },
+  { code: "CSU11001", name: "MATHEMATICS I" },
+  { code: "CSU11021", name: "Introduction to Computing I" },
+  { code: "CSU11031", name: "Electronics and Information Technology" },
+  { code: "CSU22011", name: "Algorithms and Data Structures I" },
 ];
 
 const years = ["All Years", "2019", "2020", "2021"];
