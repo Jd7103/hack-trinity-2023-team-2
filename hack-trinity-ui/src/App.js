@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
 import Exams from "./components/Exams";
+import About from "./components/about";
 
 function App() {
   const handleSearch = (code, name, year) => {
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <SearchBar handleSearch={handleSearch} />
       <Exams code={code} name={name} exams={exams} />
+      <About />
     </div>
   );
 }

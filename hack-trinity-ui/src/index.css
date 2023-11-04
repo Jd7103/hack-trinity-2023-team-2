@@ -15,7 +15,7 @@ h3 {
 }
 
 p {
-  @apply text-gray text-base md:text-lg;
+  @apply text-white text-base md:text-lg;
 }
 
 .hidden {
@@ -29,20 +29,6 @@ p {
   height: 100%;
 }
 
-.past-exam-list {
-  @apply text-center flex flex-col bg-secondary justify-center rounded-lg;
-  width: 50%;
-  height: 50%;
-}
-
-.past-exam-item {
-  @apply hover:underline font-normal relative bg-white rounded-lg m-1;
-  padding: 0 1px;
-  width: 50%;
-  left: 25%;
-  color: #0000EE;
-}
-
 .bookstairs {
   display: none;
   left: 70%;
@@ -50,10 +36,62 @@ p {
 }
 
 .notebook {
-  display: none;
+  height: 50px;
+  top: 10px;
 }
 
 .studying {
   display: none;
 }
 
+.design-bar {
+  display: none;
+  top: 500px;
+  height: 35px;
+  clip-path: polygon(45% 0, 100% 0, 100% 100%, 0% 100%);
+  width: 500px;
+}
+
+.heading {
+  position: relative;
+  left: 5%;
+}
+
+.about-section {
+  margin-top: 50px;
+  margin-bottom: 200px;
+  height: 500px;
+  border-radius: 50px;
+}
+
+.about-text-box {
+  top: 5%;
+  height: 90%;
+  width: 800px;
+  border-radius: 50px;
+}
+
+.knowledge {
+  height: 400px;
+  align-self: center;
+  left: 5%;
+}
+
+.white-bar {
+  width: 3px; 
+  height: 90%;
+  top: 5%;
+}
+
+.about-text-box .title-bar {
+  width: 90%;
+  top: 15%;
+  left: 5%;
+  height: 3px;
+  transform: rotate(90);
+}
+
+.about-paragraph {
+  top: 5%;
+  padding: 0 50px;
+}
