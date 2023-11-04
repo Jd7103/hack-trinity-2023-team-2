@@ -21,7 +21,8 @@ function SearchBar() {
   };
 
   const handleSearch = () => {
-    console.log(moduleInputRef.current.value);
+    console.log(selectedModuleOption.code);
+    console.log(selectedModuleOption.name);
     console.log(yearInputRef.current.value);
   }
 
