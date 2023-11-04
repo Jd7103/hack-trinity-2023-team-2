@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <nav className="bg-primary">
-      <h2 className="text-white p-4">Exam Search</h2>
+      <h2 className="text-white p-4">Trinity Exam Search</h2>
     </nav>
   )
 }
