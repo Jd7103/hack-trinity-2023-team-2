@@ -8,7 +8,7 @@ const modules = [
 
 const years = ["All Years", "2019", "2020", "2021"];
 
-function SearchBar() {
+function SearchBar({ handleSearch }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedModuleOption, setSelectedModuleOption] = useState(null);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -19,12 +19,6 @@ function SearchBar() {
     setSelectedModuleOption(module);
     setShowDropdown(false);
   };
-
-  const handleSearch = () => {
-    console.log(selectedModuleOption.code);
-    console.log(selectedModuleOption.name);
-    console.log(yearInputRef.current.value);
-  }
 
   useEffect(() => {
     if (selectedModuleOption === null) return;
@@ -75,7 +69,7 @@ function SearchBar() {
             </select>
           </div>
           <div className="flex-1">
-            <button className="p-2 border border-black rounded-md" onClick={handleSearch}>
+            <button className="p-2 border border-black rounded-md" onClick={() => handleSearch(selectedModuleOption.code, selectedModuleOption.name, yearInputRef.current.value)}>
               Search
             </button>
           </div>

@@ -2,31 +2,20 @@ import React, { useRef } from 'react';
 
 function Exams(props) {
   const pastExamList = useRef();
-  // const pastExamList2 = document.getElementById('list');
-  const exams = [
-  {
-    module: "CSU11011",
-    title: "CS2",
-    year: "2021"
-  },
-  {
-    title: "CS3",
-    year: "2022"
-  },
-  {
-    title: "CS4",
-    year: "2023"
-  }
-]
-  exams.forEach(function(exam, index) {
-    console.log(`Year: ${exam.year}`);
-  });
-
-  const toggleButton = () => {
-      pastExamList.current.classList.toggle('hidden');
-      // pastExamList2.classList.toggle('hidden');
-  }
-
+  const exams = [{
+      module: "CSU11011",
+      title: "CS2",
+      year: "2021"
+    },
+    {
+      title: "CS3",
+      year: "2022"
+    },
+    {
+      title: "CS4",
+      year: "2023"
+    }
+  ]
   return (
     <div className="h-[30vh]">
       <h2>Display of All Your Exams</h2>
