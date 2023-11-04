@@ -31,7 +31,7 @@ function Exams(props) {
     <div className="h-[30vh]">
       <h2>Display of All Your Exams</h2>
       <div className="list-wrap">
-        <h2>Exams </h2>
+        <h2>Exams for {exams[0].module}</h2>
         <ul id="list" className="past-exam-list m-5" ref={pastExamList}>
           {exams.map((exam) => (
             <li className="past-exam-item"><a href="">{exam.year} - {exam.title}</a></li>
