@@ -1,4 +1,7 @@
 import React, { useRef } from 'react';
+import bookstairs from "../media/bookstairs.svg";
+import notebook from "../media/notebook.svg";
+import studying from "../media/studying.svg";
 
 function Exams(props) {
   const pastExamList = useRef();
@@ -26,13 +29,12 @@ function Exams(props) {
     console.log(`Year: ${exam.year}`);
   });
 
-  const toggleButton = () => {
-      pastExamList.current.classList.toggle('hidden');
-  }
-
   return (
     <div className="h-[30vh]">
       <h2>Display of All Your Exams</h2>
+      <img src={bookstairs} className="absolute bookstairs opacity-60" alt="hello"></img>
+      <img src={notebook}className="absolute notebook opacity-40" alt="hello"></img>
+      <img src={studying}className="absolute studying opacity-40" alt="hello"></img>
       <div className="list-wrap">
         <h2>Exams for {exams[0].module}</h2>
         <ul id="list" className="past-exam-list m-5" ref={pastExamList}>
@@ -41,7 +43,6 @@ function Exams(props) {
           ))}
         </ul>
       </div>
-      <img src="bookstairs" className="opacity-30 relative"></img>
     </div>
   )
 }

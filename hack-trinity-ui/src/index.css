@@ -42,3 +42,18 @@ p {
   left: 25%;
   color: #0000EE;
 }
+
+.bookstairs {
+  display: none;
+  left: 70%;
+  height: 20%;
+}
+
+.notebook {
+  display: none;
+}
+
+.studying {
+  display: none;
+}
+
