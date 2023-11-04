@@ -72,7 +72,6 @@ public class ExamCrawler implements Runnable{
             year = yearParse.toString();
         }
 
-
         for (Element tr : pdfs) {
             pdfMap.put(year + "-" + tr.selectFirst("td").text(), tr.selectFirst("td > a[href]").attr("abs:href"));
         }
@@ -89,15 +88,11 @@ public class ExamCrawler implements Runnable{
             String url = tr.selectFirst("td > a[href]").attr("abs:href");
             pdfMap.put(tr.selectFirst("td").text(), url);
         }
-
     }
 
     public String init() throws IOException {
 
         annual();
-
-        //File test = new File("test.pdf");
-        //FileUtils.writeByteArrayToFile(test, doc.bodyAsBytes());
 
         Gson gson = new Gson();
         Type typeObject = new TypeToken<HashMap>() {}.getType();
