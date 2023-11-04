@@ -1,7 +1,7 @@
 function Exams() {
   return (
     <div className="h-[30vh]">
-      <h1>Display of All Your Exams</h1>
+      <h2>Display of All Your Exams</h2>
     </div>
   )
 }
