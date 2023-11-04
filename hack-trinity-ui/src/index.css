@@ -44,12 +44,40 @@ p {
   display: none;
 }
 
-.design-bar {
-  display: none;
-  top: 500px;
-  height: 35px;
-  clip-path: polygon(45% 0, 100% 0, 100% 100%, 0% 100%);
+.design-bar1 {
+  top: 10px;
+  right: -100px;
+  z-index: 0;
+  height: 15px;
   width: 500px;
+  transform: rotate(45deg);
+}
+
+.design-bar2 {
+  top: 10px;
+  left: -100px;
+  z-index: -1;
+  height: 15px;
+  width: 500px;
+  transform: rotate(-45deg);
+}
+
+.design-bar3 {
+  top: -40px;
+  right: -100px;
+  z-index: 0;
+  height: 15px;
+  width: 500px;
+  transform: rotate(45deg);
+}
+
+.design-bar4 {
+  top: -40px;
+  left: -100px;
+  z-index: -1;
+  height: 15px;
+  width: 500px;
+  transform: rotate(-45deg);
 }
 
 .heading {
@@ -94,4 +122,8 @@ p {
 .about-paragraph {
   top: 5%;
   padding: 0 50px;
+}
+
+.exams-header {
+  margin-bottom: 20px;
 }
