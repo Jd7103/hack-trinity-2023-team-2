@@ -17,3 +17,29 @@ h3 {
 p {
   @apply text-gray text-base md:text-lg;
 }
+
+.hidden {
+  display: hidden;
+}
+
+.list-wrap {
+  @apply flex flex-col font-bold border relative justify-center items-center border-black border-opacity-100 p-4;
+  width: 40%;
+  left: 30%;
+  height: 100%;
+}
+
+.past-exam-list {
+  @apply text-center flex flex-col bg-primary justify-center rounded-lg;
+  width: 50%;
+  height: 50%;
+}
+
+.past-exam-item {
+  @apply hover:underline font-normal relative bg-white rounded-lg m-1;
+  padding: 0 1px;
+  width: 40%;
+  left: 30%;
+  color: #0000EE;
+}
+
