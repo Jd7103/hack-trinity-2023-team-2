@@ -94,6 +94,8 @@ public class ExamCrawler implements Runnable{
 
         annual();
 
+        while (Thread.activeCount() > 15) {}
+
         Gson gson = new Gson();
         Type typeObject = new TypeToken<HashMap>() {}.getType();
         String gsonPDFs = gson.toJson(pdfMap, typeObject);

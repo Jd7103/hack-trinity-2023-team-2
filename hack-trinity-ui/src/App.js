@@ -17,8 +17,9 @@ function App() {
   const handleSearch = async (code, name) => {
     setCode(code);
     setName(name);
+    console.log("fetching atm")
     try {
-      const response = await fetch(`localhost:4567/getExams?code=${code}?name=${name}`);
+      const response = await fetch(`https://localhost:4567/getExams?code=${code}&name=${name}&user=doyle46&pass=Jd7!2003`);
       if (response.ok) {
         const responseData = await response.json();
         // manipulate here
