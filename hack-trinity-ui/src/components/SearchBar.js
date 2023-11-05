@@ -21,6 +21,11 @@ function SearchBar({ handleSearch }) {
     setShowDropdown(false);
   };
 
+  const handleSearchCheck = () => {
+    if (selectedModuleOption === null) return;
+    handleSearch(selectedModuleOption.code, selectedModuleOption.name);
+  };
+
   useEffect(() => {
     if (selectedModuleOption === null) return;
     moduleInputRef.current.value = selectedModuleOption.code + '-' + selectedModuleOption.name;
@@ -71,7 +76,7 @@ function SearchBar({ handleSearch }) {
             </select>
           </div> */}
           <div className="mx-2 w-[30%]">
-            <button className="p-2 border border-black rounded-md hover:bg-primary hover:text-white" onClick={() => handleSearch(selectedModuleOption.code, selectedModuleOption.name)}>
+            <button className="p-2 border border-black rounded-md hover:bg-primary hover:text-white" onClick={handleSearchCheck}>
               Search
             </button>
           </div>
