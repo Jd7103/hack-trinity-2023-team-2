@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
 import Exams from "./components/Exams";
 import About from "./components/about";
+import Map from "./components/Map"; // ignore this error
+import Footer from "./components/Footer"; // ignore this error
 
 function App() {
   const handleSearch = (code, name, year) => {
@@ -22,6 +24,8 @@ function App() {
       <SearchBar handleSearch={handleSearch} />
       <Exams code={code} name={name} exams={exams} />
       <About />
+      <Map />
+      <Footer />
     </div>
   );
 }

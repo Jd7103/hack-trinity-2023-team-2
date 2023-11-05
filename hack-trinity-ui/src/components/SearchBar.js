@@ -27,10 +27,10 @@ function SearchBar({ handleSearch }) {
   }, [selectedModuleOption]);
 
   return (
-    <div className="flex justify-center items-center p-6">
-      <div className="w-[50vw]">
-        <h3 className="text-center p-2" style={{marginBottom: '25px'}}>Search for an exam:</h3>
-        <div className="flex flex-row justify-between">
+    <div className="flex justify-center items-center p-6 relative top-6">
+      <div className="w-[50vw] justify-center">
+        <h3 className="text-center p-2 stroke" style={{marginBottom: '25px'}}>Search for an exam:</h3>
+        <div className="flex flex-row justify-center">
           <div className="w-[60%]">
             <input
               ref={moduleInputRef}
@@ -69,12 +69,12 @@ function SearchBar({ handleSearch }) {
               ))}
             </select>
           </div>
-          <div className="flex-1">
+        </div>
+        <div className="flex-1">
             <button className="p-2 border border-black rounded-md" onClick={() => handleSearch(selectedModuleOption.code, selectedModuleOption.name, yearInputRef.current.value)}>
               Search
             </button>
           </div>
-        </div>
       </div>
     </div>
   );

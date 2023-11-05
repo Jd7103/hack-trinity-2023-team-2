@@ -4,8 +4,8 @@ import studying from "../media/studying.svg";
 
 function Exams({ code, name, exams }) {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <h3 className="exams-header">Exams for {code}-{name}</h3>
+    <div className="flex flex-col justify-center items-center relative top-6">
+      <h3 className="exams-header stroke">Exams for {code}-{name}</h3>
       <img className="bookstairs absolute" src={bookstairs}></img>
       <img className="studying absolute" src={studying}></img>
       <span className="bg-secondary design-bar1 absolute"></span>
