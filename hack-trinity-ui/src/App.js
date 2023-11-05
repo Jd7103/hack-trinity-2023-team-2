@@ -3,8 +3,8 @@ import SearchBar from "./components/SearchBar";
 import Exams from "./components/Exams";
 import About from "./components/about";
 import { useState } from "react";
-import Map from "./components/Map"; // ignore this error
-import Footer from "./components/Footer"; // ignore this error
+import Map from "./components/map"; // ignore this error
+import Footer from "./components/footer"; // ignore this error
 
 function App() {
 
