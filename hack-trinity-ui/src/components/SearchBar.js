@@ -34,6 +34,10 @@ function SearchBar({ handleSearch }) {
   return (
 
     <div className="flex justify-center items-center p-6">
+      <span className="bg-secondary design-bar1 absolute"></span>
+      <span className="bg-secondary design-bar2 absolute"></span>
+      <span className="bg-secondary design-bar3 absolute"></span>
+      <span className="bg-secondary design-bar4 absolute"></span>
       <div className="w-[40vw]">
         <h3 className="text-center p-2" style={{marginBottom: '25px'}}>Search for an exam:</h3>
         <div className="flex flex-row justify-between">

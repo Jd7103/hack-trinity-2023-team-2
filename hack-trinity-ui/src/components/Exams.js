@@ -7,10 +7,7 @@ function Exams({ code, name, exams }) {
     <div className="flex flex-col justify-center items-center relative top-6">
       <img className="bookstairs absolute" src={bookstairs}></img>
       <img className="studying absolute" src={studying}></img>
-      <span className="bg-secondary design-bar1 absolute"></span>
-      <span className="bg-secondary design-bar2 absolute"></span>
-      <span className="bg-secondary design-bar3 absolute"></span>
-      <span className="bg-secondary design-bar4 absolute"></span>
+
       {(name !== "" && code !== "") ?
         <div className="flex flex-col justify-center items-center">
           <h3 className="my-3">Exams for {code}-{name}</h3>
