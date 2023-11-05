@@ -23,7 +23,7 @@ function App() {
     setName(name);
     console.log("fetching atm")
     try {
-      const response = await fetch(`https://b054-134-226-214-216.ngrok.io/getExams?code=${code}&name=${name}&user=doylej46&pass=Jd7!2003`, {mode: 'no-cors'}).then((res) => console.log(res));
+      const response = await fetch(`https://b054-134-226-214-216.ngrok.io/getExams?code=${code}&name=${name}&user=USERNAME&pass=PASSWORD`, {mode: 'no-cors'}).then((res) => console.log(res));
       // console.log(response)
       if (response.ok) {
         console.log("hello world")
