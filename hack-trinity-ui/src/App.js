@@ -3,6 +3,8 @@ import SearchBar from "./components/SearchBar";
 import Exams from "./components/Exams";
 import About from "./components/about";
 import { useState } from "react";
+import Map from "./components/Map"; // ignore this error
+import Footer from "./components/Footer"; // ignore this error
 
 function App() {
 
@@ -40,6 +42,8 @@ function App() {
       <SearchBar handleSearch={handleSearch} />
       <Exams code={code} name={name} exams={exams} />
       <About />
+      <Map />
+      <Footer />
     </div>
   );
 }

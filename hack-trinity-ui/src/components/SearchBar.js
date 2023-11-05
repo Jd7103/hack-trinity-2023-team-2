@@ -32,12 +32,13 @@ function SearchBar({ handleSearch }) {
   }, [selectedModuleOption]);
 
   return (
+
     <div className="flex justify-center items-center p-6">
       <div className="w-[40vw]">
         <h3 className="text-center p-2" style={{marginBottom: '25px'}}>Search for an exam:</h3>
-
         <div className="flex flex-row justify-between">
           <div className="w-[70%]">
+
             <input
               ref={moduleInputRef}
               type="text"
