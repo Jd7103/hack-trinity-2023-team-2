@@ -31,7 +31,7 @@ public class APICalls {
                     return "OK";
                 });
 
-        before((request, response) -> response.header("Access-Control-Allow-Origin", "*"));
+        before((req, res) -> res.header("Access-Control-Allow-Origin", "*"));
 
         get("/getExams", (req, res)->{
             ExamCrawler crawler = new ExamCrawler(
@@ -40,7 +40,10 @@ public class APICalls {
                     req.queryParams("user"),
                     req.queryParams("pass"));
 
-            return crawler.init();
+            String response = crawler.init();
+            System.out.println(response);
+
+            return response;
         });
 
         get("/getPDF", (req, res)->{

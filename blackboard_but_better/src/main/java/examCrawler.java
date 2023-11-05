@@ -61,6 +61,7 @@ public class ExamCrawler implements Runnable{
                 .get();
 
         String year = "";
+        String capturedName = "";
 
         Elements pdfs = page.select("tbody > tr:has(td > a[href])");
 
@@ -73,10 +74,15 @@ public class ExamCrawler implements Runnable{
         }
 
         for (Element tr : pdfs) {
+            try {capturedName = tr.select("td").get(1).text(); }
+            catch(Exception e) {}
+
+            if (tr.selectFirst("td").text().toLowerCase().contains(moduleCode) || moduleName.equalsIgnoreCase(capturedName))
             pdfMap.put(year + "-" + tr.selectFirst("td").text(), tr.selectFirst("td > a[href]").attr("abs:href"));
         }
     }
 
+    /*
     public void getAllPDF() throws IOException {
         Document page = Jsoup.connect(Thread.currentThread().getName())
                 .header("authorization", "Basic " + this.auth)
@@ -89,6 +95,7 @@ public class ExamCrawler implements Runnable{
             pdfMap.put(tr.selectFirst("td").text(), url);
         }
     }
+     */
 
     public String init() throws IOException {
 
